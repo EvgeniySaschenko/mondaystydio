@@ -1,0 +1,7 @@
+mixin b-our-works()
+	+b.SECTION.our-works#our-works
+		.container
+			+b-stack-word(our_works.title, 'title')
+			+b-stack-word(our_works.note, 'note')
+			+b-simple-element('plus')
+		+b-list-tile(our_works.list_recent_works, 'our-works')

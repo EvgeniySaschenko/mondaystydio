@@ -1,0 +1,14 @@
+mixin b-ltable-timing(items, clsses)
+	+b.TABLE.ltable-timing(class='_' + clsses)
+		- coutCol = 16
+		each item, i in items
+			+b.TR.row(class='_' + i)
+				+b.TD.cell(class='_0')!=item.name
+				if i === 0
+					- for(var x = 1; x < coutCol; x++)
+							+b.TD.cell(class='_' + x)
+								+e.string_2=x
+								+e.string_1='день'
+				else
+					- for(var x = 1; x < coutCol; x++)
+							+b.TD.cell(class='_' + x)

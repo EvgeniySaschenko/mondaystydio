@@ -1,0 +1,6 @@
+mixin b-stack-double-word(items, clsses)
+	+b.stack-double-word(class='_' + clsses)
+		each item, i in items
+			+e.item(class='_' + i)!= item 
+			if (i + 1) % 2 == 0
+				div

@@ -1,0 +1,7 @@
+mixin b-footer()
+	+b.SECTION.footer#contacts
+		+b-map(footer.map_link, 'footer')
+		.container
+				+e.left
+					+b-stack-word(footer.title, 'title')
+					+b-list-feedback(footer.list_feedback, 'footer')

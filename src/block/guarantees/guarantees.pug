@@ -1,0 +1,11 @@
+mixin b-guarantees()
+	+b.SECTION.guarantees#guarantees
+		.container
+			+e.left
+				+b-stack-word(guarantees.title, 'title')
+				+e.col-1
+					+b-stack-word(guarantees.note, 'note')
+					+b-simple-element('plus')
+
+			+e.right
+				+b-list-options(guarantees.list_guarantees, 'guarantees', guarantees.btn_download)

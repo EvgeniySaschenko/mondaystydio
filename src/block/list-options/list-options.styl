@@ -1,0 +1,50 @@
+.calculator
+	.list-options
+		&_2
+			display flex
+			flex-wrap wrap
+			flex-direction row
+			justify-content space-between
+			align-items center
+			.item-box
+				width 265px
+				.item
+					display flex
+					flex-direction row
+					justify-content space-between
+					align-items center
+					width 265px
+					height 65px
+					box-sizing border-box
+					border 2px solid #000
+					padding 15px 10px
+					margin 12px 0
+					cursor pointer
+					&__icon
+						display none
+				.item.active
+					background colorCorp
+					border-color colorCorp
+					color #fff
+					.item__icon
+						display inline-block
+						
+.guarantees
+	.list-options
+		&_guarantees
+			display flex
+			flex-wrap wrap
+			flex-direction row
+			justify-content space-between
+			align-items center
+			.item-box
+				width 50%
+				.item
+					margin-bottom 30px
+					&__name
+						font-size 24px
+						font-family FuturaNewDemiReg
+						text-transform uppercase
+						padding-bottom 5px
+					&__description
+						line-height 1.5

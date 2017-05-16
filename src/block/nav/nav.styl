@@ -1,0 +1,37 @@
+.header
+	.nav
+		&_header
+			display inline-block
+			position relative
+		.nav-toggler
+			width 17px
+			display inline-block
+			cursor pointer
+			&__row
+				border-top 2px solid #fff
+				padding-bottom 5px
+		.nav-list
+			width 700px
+			display flex
+			flex-wrap wrap
+			flex-direction row
+			justify-content space-between
+			align-items center
+			background rgba(0, 0, 0, .5)
+			position absolute
+			right 0
+			top 30px
+			display none
+			&__item
+				padding 10px
+				text-transform uppercase
+		&_header.active
+			.nav-list
+				display flex
+			.nav-toggler
+				text-align center
+				line-height 0
+				&__row_1
+				&__row_3
+					width 14px
+					display inline-block

@@ -1,0 +1,17 @@
+mixin b-list-tile(items, clsses)
+	+b.list-tile(class='_' + clsses)
+		each item, i in items
+			+b.item(class='_' + i)
+				if item.src
+					+e.box-img-1
+						+e.IMG.img(class='_' + i, src=item.src, alt="img")
+						+e.box-text
+							if item.name
+								+e.name!= item.name
+							if item.description
+								+e.description!= item.description
+							if item.btn
+								+b.BUTTON.button!= item.btn
+					if item.src2
+						+e.box-img-2
+							+e.IMG.img(class='_' + i + '2', src=item.src2, alt="img")

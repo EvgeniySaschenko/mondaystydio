@@ -1,0 +1,5 @@
+mixin b-stack-word(items, clsses)
+	+b.stack-word(class='_' + clsses)
+		each item, i in items
+			+e.item(class='_' + i)
+				+e.text(class='_' + i)!= item

@@ -1,0 +1,13 @@
+mixin b-list-feedback(items, clsses)
+	+b.list-feedback(class='_' + clsses)
+		each item, i in items
+			+b.item(class='_' + i)
+				if item.icon
+					+e.icon(class=item.icon)
+				+e.text-box
+					if item.type == 'phone'
+						+e.A.link(class='_' + item.type, href="tel:" + item.link)!= item.name
+					if item.type == 'mail'
+						+e.A.link(class='_' + item.type, href="mailto:" + item.link)!= item.name
+					if item.type == 'address'
+						+e.ADDRESS.text(class='_' + item.type)!= item.name

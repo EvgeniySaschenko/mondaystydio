@@ -1,0 +1,20 @@
+mixin b-header()
+	+b.HEADER.header#home
+		+e.front
+			.container
+				+e.top
+					+e._left
+						+b-logo('img/logo.png', 'logo')
+						+b-stack-double-word(header.title, 'title')
+					+e._right
+						+b-list-feedback(header.feedback, 'header')
+						+b-nav(header.nav, 'header')
+				+e.advantages
+					+b-stack-word(header.advantages_1, 'advantages-1')
+					+b-stack-word(header.advantages_2, 'advantages-2')
+					+e.box_advantages-3
+						+b-simple-element('plus')
+						+b-stack-word(header.advantages_3, 'advantages-3')
+				+e.offer
+					+b-stack-word(header.text_offer, 'offer')
+					+b-button(header.btn_offer, 'offer')

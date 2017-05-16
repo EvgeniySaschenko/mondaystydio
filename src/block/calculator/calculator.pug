@@ -1,0 +1,33 @@
+mixin b-calculator()
+	+b.SECTION.calculator#cost
+		.container
+			+e.box
+				+e.row-1
+					+e.col-1
+						+b-stack-word(calculator.title, 'title')
+					+e.col-2
+						+b-stack-word(calculator.title_option_1, 'title-option')
+					+e.col-3
+						+b-list-options-icon-out(calculator.list_option_1, '1', calculator.btn_list_option_1)
+
+				+e.row-2
+					+e.col-1
+						+b-stack-word(calculator.offer_1, 'offer')
+					+e.col-2
+						+b-stack-word(calculator.title_option_2, 'title-option')
+					+e.col-3
+						+b-simple-element('plus')
+
+				+e.row-3
+					+b-list-options(calculator.list_option_2, '2')
+
+				+e.row-4
+					+e.col-1
+						+b-stack-word(calculator.offer_2, 'offer')
+					+e.col-2
+						+b-stack-word(calculator.title_option_3, 'title-option')
+					+e.col-3
+						+b-simple-element('plus')
+
+				+e.row-5
+					+b-form-input(calculator.form_feedback, 'feedback', calculator.btn_form_feedback, 'action/feedback')

@@ -1,0 +1,8 @@
+mixin b-form-input(items, clsses, btnName, action)
+	+b.FORM.form-input(class="_" + clsses, action=action, method="post")
+		each item, i in items
+			+b.item(class="_" + i)
+				+e.label!= item.name
+				+e.INPUT.input(class="_" + item.fieldName, name=item.fieldName, type="text", placeholder=item.placeholder, required="required")
+
+		+b.BUTTON.button(class="_send" + clsses)!= btnName

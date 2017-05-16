@@ -1,0 +1,13 @@
+mixin b-list-options-icon-out(items, clsses, btnName)
+	+b.list-options-icon-out(class='_' + clsses)
+		each item, i in items
+			+b.item-box(class='_' + i)
+				+b.item(class='_' + i)
+					if item.icon
+						+e.icon(class=item.icon)
+						+e.text-box
+							+e.name!= item.name
+							if item.description
+								+e.description!= item.description
+		if btnName		
+			+b.BUTTON.button(class='_more')!= btnName

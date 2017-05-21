@@ -1,5 +1,5 @@
-mixin b-ltable-timing(items, clsses)
-	+b.TABLE.ltable-timing(class='_' + clsses)
+mixin b-table-timing(items, clsses)
+	+b.TABLE.table-timing(class='_' + clsses)
 		- coutCol = 16
 		each item, i in items
 			+b.TR.row(class='_' + i)

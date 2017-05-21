@@ -1,10 +1,21 @@
 .header
 	.list-feedback
-		display inline-block
 		font-size 18px
 		.item 
 			display inline-block
 			padding-right 50px
+			
+@media tablet
+	.header
+		.list-feedback
+			.item 
+				display block
+				
+@media phone
+	.header
+		.list-feedback
+			.item 
+				display inline-block
 			
 .footer
 	.list-feedback

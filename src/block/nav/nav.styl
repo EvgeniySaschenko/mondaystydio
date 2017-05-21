@@ -19,6 +19,7 @@
 			align-items center
 			background rgba(0, 0, 0, .5)
 			position absolute
+			z-index 10
 			right 0
 			top 30px
 			display none
@@ -35,3 +36,11 @@
 				&__row_3
 					width 14px
 					display inline-block
+@media phone
+	.header
+		.nav
+			&_header
+				.nav-list
+					flex-direction column
+					ustify-content center
+					right -25px

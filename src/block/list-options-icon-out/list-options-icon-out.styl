@@ -1,7 +1,6 @@
 .calculator
 	.list-options-icon-out
 		&_1
-			width 400px
 			max-width 400px
 			display inline-block
 			.item
@@ -48,3 +47,14 @@
 					font-family FuturaNewDemiReg
 				&__description 
 					line-height 1.5
+					
+@media phone
+	.advantages
+		.list-options-icon-out
+			&_advantages
+				display flex
+				flex-direction column
+				justify-content center
+				align-items center
+				.item-box
+					width auto

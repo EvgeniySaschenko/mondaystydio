@@ -29,6 +29,15 @@
 					.item__icon
 						display inline-block
 						
+@media tablet				
+	.calculator
+		.list-options
+			&_2
+				justify-content center
+				.item-box
+					margin 10px
+
+						
 .guarantees
 	.list-options
 		&_guarantees
@@ -48,3 +57,13 @@
 						padding-bottom 5px
 					&__description
 						line-height 1.5
+											
+				
+@media phone
+	.guarantees
+		.list-options
+			&_guarantees
+				flex-direction column
+				justify-content center
+				.item-box
+					width 265px

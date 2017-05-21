@@ -55,8 +55,27 @@
 		.calculator__col-3
 			width 16%
 
-
 	&__row-2
 	&__row-4
 		.calculator__col-3
 			text-align right
+			
+@media tablet
+	.calculator
+		&__row-1, &__row-2, &__row-4
+			.calculator__col-1
+				width 100%
+				margin-bottom 30px
+				text-align center
+			.calculator__col-2
+				width 40%
+			.calculator__col-3
+				width 60%
+				
+			
+@media phone
+	.calculator
+		&__row-1, &__row-2, &__row-4
+			.calculator__col-1, .calculator__col-2, .calculator__col-3
+				width 100%
+				margin-bottom 30px

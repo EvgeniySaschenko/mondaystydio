@@ -9,5 +9,7 @@ mixin b-list-options(items, clsses, btnName)
 							+e.icon(class=item.icon)
 						if item.description
 							+e.description!= item.description
-		if btnName		
-			+b.BUTTON.button(class='_more')!= btnName
+		if btnName
+			+b.item-box.item-box_button
+				+b.item.item_button
+					+b.BUTTON.button(class='_more')!= btnName

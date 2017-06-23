@@ -8,7 +8,8 @@ mixin b-header()
 						+b-stack-double-word(header.title, 'title')
 					+e.right
 						+b-list-feedback(header.feedback, 'header')
-						+b-nav(header.nav, 'header')
+						.box-nav
+							+b-nav(header.nav, 'header')
 				+e.advantages
 					+b-stack-word(header.advantages_1, 'advantages-1')
 					+b-stack-word(header.advantages_2, 'advantages-2')

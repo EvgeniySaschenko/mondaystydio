@@ -2,11 +2,14 @@
 	.nav
 		&_header
 			display inline-block
-			position relative
+			position fixed
+			z-index 10
 		.nav-toggler
 			width 17px
 			display inline-block
 			cursor pointer
+			background rgba(0, 0, 0, .1)
+			padding 5px 5px 0
 			&__row
 				border-top 2px solid #fff
 				padding-bottom 5px
@@ -43,4 +46,5 @@
 				.nav-list
 					flex-direction column
 					ustify-content center
+					align-items center
 					right -25px

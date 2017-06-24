@@ -1,0 +1,5 @@
+mixin b-title-page(items, clsses)
+	+b.H1.title-page(class='_' + clsses)
+		each item, i in items
+			+e.SPAN.item(class='_' + i)
+				+e.SPAN.text(class='_' + i)!= item

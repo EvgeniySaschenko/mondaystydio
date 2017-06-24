@@ -13,6 +13,7 @@
 			&__row
 				border-top 2px solid #fff
 				padding-bottom 5px
+				width 100%
 		.nav-list
 			width 700px
 			display flex
@@ -29,22 +30,25 @@
 			&__item
 				padding 10px
 				text-transform uppercase
+			&__link.active
+				text-decoration underline
 		&_header.active
 			.nav-list
 				display flex
 			.nav-toggler
-				text-align center
-				line-height 0
 				&__row_1
 				&__row_3
-					width 14px
-					display inline-block
+					margin 0 auto
+					width 80%
+					
 @media phone
 	.header
-		.nav
-			&_header
-				.nav-list
-					flex-direction column
-					ustify-content center
-					align-items center
-					right -25px
+		.nav_header
+			top 40px
+		.nav_header.active
+			display block
+			.nav-list
+				display block
+				&__item
+					width 100%
+					text-align center

@@ -1,6 +1,7 @@
-#How to use
+* **npm i** - установка модулей
+* **gulp** - запуск
 
-Clone this repo and then in command line type:
-
-npm install - install all dependencies
-gulp - build project from sources and start server
+* Что использовалось: JQuery, CoffeeScript, Stylus, PUG (верстка миксинами), Gulp, YML
+* Функционал: адаптивная верстка
+* Работа: верстка по макету
+* Ссылка на сайт: https://evgeniysaschenko.github.io/mondaystydio/
